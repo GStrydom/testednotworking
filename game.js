@@ -661,7 +661,7 @@ scrn.onkeydown = function keyDown(e) {
     score : {
         curr : 0,
         best : 0,
-        tokens : 1
+        tokens : 0
     },
     x :0,
     y :0,
