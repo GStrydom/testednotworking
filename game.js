@@ -86,11 +86,10 @@ scrn.onkeydown = function keyDown(e) {
                 bird.flap();
                 break;
             case state.gameOver :
-                // if (UI.score.tokens > 0) {
-                //     state.curr = state.showEliminations;
-                //     bird.eliminateTester();
-                // }
-                bird.eliminateTester()
+                if (UI.score.tokens > 0) {
+                    state.curr = state.showEliminations;
+                    bird.eliminateTester();
+                }
                 state.curr = state.getReady;
                 console.log(state.curr);
                 bird.speed = 0;
@@ -408,7 +407,7 @@ scrn.onkeydown = function keyDown(e) {
                          bird.animations[3].sprite.src = "img/bird/devs/Wayne.png";
                      }
                  }
-                 if (coords['x'] > 483 && coords['x'] < 510) {
+                 if (coords['x'] > 438 && coords['x'] < 509) {
                      if (coords['y'] > 350 && coords['y'] < 420) {
                          selectedImage = "vivian.png";
                          bird.animations[0].sprite.src = "img/bird/devs/vivian.png";
@@ -494,6 +493,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(ishratEImg, 10, 265, imgWidth, imgHeight)
                          }
                      }
@@ -507,6 +510,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(nikaEImg, 95, 265, imgWidth, imgHeight)
                          }
                      }
@@ -520,6 +527,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(sandraEImg, 180, 265, imgWidth, imgHeight)
                          }
                      }
@@ -533,6 +544,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(ubaidEImg, 265, 265, imgWidth, imgHeight)
                          }
                      }
@@ -546,6 +561,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(michelleEImg, 350, 265, imgWidth, imgHeight)
                          }
                      }
@@ -559,6 +578,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(claudiaEImg, 435, 265, imgWidth, imgHeight)
                          }
                      }
@@ -572,6 +595,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(gregEImg, 10, 365, imgWidth, imgHeight)
                          }
                      }
@@ -585,6 +612,10 @@ scrn.onkeydown = function keyDown(e) {
                          let choice = confirm('Would you really like to eliminate this tester :( :( :(');
                          if (choice) {
                              UI.score.tokens -= 1;
+                             tks = 'Tokens: ' + UI.score.tokens
+                             esctx.font = "30px Arial";
+                             esctx.fillText(tks, 120, 500);
+                             esctx.strokeText(tks, 120, 500);
                              esctx.drawImage(heatherEImg, 95, 365, imgWidth, imgHeight)
                          }
                      }
@@ -693,13 +724,11 @@ scrn.onkeydown = function keyDown(e) {
                         let tokens = 'Num Tokens: ' + UI.score.tokens;
                         sctx.fillText(tokens,scrn.width/2-80,scrn.height/2+110);
                         sctx.strokeText(tokens,scrn.width/2-80,scrn.height/2+110);
-
                     }
                     catch(e) {
                         sctx.fillText(sc,scrn.width/2-85,scrn.height/2+15);
                         sctx.strokeText(sc,scrn.width/2-85,scrn.height/2+15);
                     }
-                    
                 break;
         }
     },
