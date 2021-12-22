@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tested: Not Working</title>
+    <link rel="stylesheet" href="style.css" > 
+    <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- UI IMAGES -->
+    <img id="picker" src="img/picker.png" alt="picker" hidden>
+    <img id="eliminate" src="img/eliminate.png" alt="eliminate" hidden>
+    <img id="introtext" src="img/introtext.png" alt="introtext" hidden>
+    <button id="selBut">Fix BUGS</button>
+
+    <img id="canv2back" src="img/canvas2_background.png" alt="canv2back" hidden>
+    <img id="canv3back" src="img/canvas3_background.png" alt="canv3back" hidden>
+    <img id="shrek" src="img/shrek_small.png" style="z-index: -1" alt="shrek" hidden>
+
+    <!-- DEVELOPER IMAGES -->
+    <img id="akshay" src="img/bird/devs/Akshay.png" alt="Akshay" hidden>
+    <img id="alex" src="img/bird/devs/Alex.png" alt="Alex" hidden>
+    <img id="guneet" src="img/bird/devs/Guneet.png" alt="Guneet" hidden>
+    <img id="prajwal" src="img/bird/devs/Prajwal.png" alt="Prajwal" hidden>
+    <img id="will" src="img/bird/devs/Will.png" alt="Will" hidden>
+    <img id="harry" src="img/bird/devs/Harry.png" alt="Harry" hidden>
+    <img id="abishek" src="img/bird/devs/Abishek.png" alt="Abishek" hidden>
+    <img id="nazmul" src="img/bird/devs/Nazmul.png" alt="Nazmul" hidden>
+    <img id="brad" src="img/bird/devs/Brad.png" alt="Brad" hidden>
+    <img id="justas" src="img/bird/devs/Justas.png" alt="Justas" hidden>
+    <img id="wayne" src="img/bird/devs/Wayne.png" alt="Wayne" hidden>
+    <img id="vivian" src="img/bird/devs/vivian.png" alt="Vivian" hidden>
+
+    <!-- TESTER SAFE IMAGES -->
+    <img id="greg" src="img/bird/testers/greg.png" alt="greg" hidden>
+    <img id="carmen" src="img/bird/testers/carmen.png" alt="carmen" hidden>
+    <img id="aditi" src="img/bird/testers/aditi.png" alt="aditi" hidden>
+    <img id="ishrat" src="img/bird/testers/ishra_1.png" alt="ishrat" hidden>
+    <img id="nika" src="img/bird/testers/nika.png" alt="nika" hidden>
+    <img id="sandra" src="img/bird/testers/sandra.png" alt="sandra" hidden>
+    <img id="claudia" src="img/bird/testers/claudia.png" alt="claudia" hidden>
+    <img id="michelle" src="img/bird/testers/MIchelle.png" alt="michelle" hidden>
+    <img id="ubaid" src="img/bird/testers/ubaid.png" alt="ubaid" hidden>
+    <img id="heather" src="img/bird/testers/heather.png" alt="ubaid" hidden>
+
+    <!-- TESTER ELIMINATED IMAGES -->
+    <img id="ishrat_e" src="img/bird/testers/ishra_1_eliminated.png" alt="ishrat_e" hidden>
+    <img id="nika_e" src="img/bird/testers/nika_eliminated.png" alt="nika_e" hidden>
+    <img id="sandra_e" src="img/bird/testers/sandra_eliminated.png" alt="sandra_e" hidden>
+    <img id="ubaid_e" src="img/bird/testers/ubaid_eliminated.png" alt="ubaid_e" hidden>
+    <img id="michelle_e" src="img/bird/testers/MIchelle_eliminated.png" alt="michelle_e" hidden>
+    <img id="claudia_e" src="img/bird/testers/claudia_eliminated.png" alt="claudia_e" hidden>
+
+    <canvas id="canvas" width="552" height="780" style="z-index: -1"></canvas>
+    <canvas id="canvas2" width="552" height="780"></canvas>
+    <canvas id="canvas3" width="552" height="780"></canvas>
+    <canvas id="canvas4" width="552" height="780"></canvas>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.0.0/fabric.min.js"></script>
+    <script src="game.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#canvas2').hide();
+            $('#canvas3').hide();
+            $('#canvas4').hide();
+            $('#selBut').hide();
+        })
+    </script>
+</body>
+</html>
