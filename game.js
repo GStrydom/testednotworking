@@ -43,11 +43,10 @@ const hsctx = hsScrn.getContext('2d');
             bird.flap();
             break;
         case state.gameOver :
-            // if (UI.score.tokens > 0) {
-            //     state.curr = state.showEliminations;
-            //     bird.eliminateTester();
-            // }
-            bird.eliminateTester();
+            if (UI.score.tokens > 0) {
+                state.curr = state.showEliminations;
+                bird.eliminateTester();
+            }
             state.curr = state.getReady;
             console.log(state.curr);
             bird.speed = 0;
